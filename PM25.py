@@ -76,7 +76,7 @@ if __name__ == "__main__":
 df_1 = pd.read_csv('data_2024_new.csv')
 
 def main():
-    st.header('Select the date you want to know the trend of Pm2.5 dust.')
+    st.header('Select the date you want to know the trend of PM2.5 dust.')
 
     # Convert the 'Date' column to datetime
     #df_1['date'] = pd.to_datetime(df_1['date'])
@@ -89,7 +89,7 @@ def main():
 
     # Display the selected date and PM2.5 value
     st.write(f" Choose your PM2.5 value for date '{selected_date}':")
-    st.header(f"PM2.5 value: {pm25_value}")
+    st.subheader(f"PM2.5 value: {pm25_value}")
 if __name__ == '__main__':
     main()
 
