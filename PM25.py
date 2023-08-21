@@ -36,7 +36,7 @@ def main():
     st.header("Prediction PM2.5 in year 2024")
     
     # Load your data from data.csv
-    data = pd.read_csv("/Users/kuer/Desktop/PM25/data_2024.csv")
+    data = pd.read_csv("data_2024.csv")
     
     st.write("### Select Columns to Plot")
     selected_columns = st.multiselect("Select columns to plot", data.columns)
@@ -98,14 +98,14 @@ st.header("A brief history of PM2.5 ")
 st.subheader('')
  
 
-image = Image.open('/Users/kuer/Desktop/PM25/PM2.5.jpg')
+image = Image.open('PM2.5.jpg')
 
 
 st.image(image, caption='https://thainakarin.co.th')
 st.markdown("PM stands for Particulate matter it is one of the pollutants, made from a mixture of many chemical species both organic and inorganic. Particles vary widely in size, shape, and chemical composition. It may contain metallic compounds or even carcinogenic compounds. Particles are defined by their diameter for air quality regulatory purposes including those with a diameter of 10 microns or less (PM10), Fine particulate matter that is 2.5 microns or less in diameter (PM2.5)")
 
 st.header("Air quality index")
-image_index = Image.open('/Users/kuer/Desktop/PM25/IMG_6081.jpeg')
+image_index = Image.open('IMG_6081.jpeg')
 st.image(image_index, caption='Air quality index')
 #st.header("PM 2.5 Graph of year 2022")
     
@@ -114,7 +114,7 @@ def main():
     st.title("PM 2.5 Graph of year 2022")
     
     # Load your data from data.csv
-    data = pd.read_csv("/Users/kuer/Desktop/PM25/BKK-2022.csv")
+    data = pd.read_csv("BKK-2022.csv")
     
     #st.write("### Data Preview")
     #st.dataframe(data.head())
@@ -135,7 +135,7 @@ def main():
     st.title("PM 2.5 Graph of year 2021")
     
     # Load your data from data.csv
-    data = pd.read_csv("/Users/kuer/Desktop/PM25/BKK-2021.csv")
+    data = pd.read_csv("BKK-2021.csv")
     
     #st.write("### Data Preview")
     #st.dataframe(data.head())
@@ -153,7 +153,7 @@ if __name__ == "__main__":
 
 
 st.header("A Process Flow Diagram")
-image_index = Image.open('/Users/kuer/Desktop/PM25/De.jpg')
+image_index = Image.open('De.jpg')
 st.image(image_index, caption='A Flow dirgram process')
 
 
