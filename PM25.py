@@ -89,7 +89,7 @@ def main():
 
     # Display the selected date and PM2.5 value
     st.write(f" Choose your PM2.5 value for date '{selected_date}':")
-    st.subheader(f"PM2.5 value: {pm25_value}, :sunglasses:")
+    st.subheader(f"PM2.5 value: {pm25_value}")
 if __name__ == '__main__':
     main()
 
