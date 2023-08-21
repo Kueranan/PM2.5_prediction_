@@ -93,8 +93,11 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-st.header("A brief history of PM2.5 ")
+st.header("Air quality index")
+image_index = Image.open('IMG_6081.jpeg')
+st.image(image_index, caption='Air quality index')
+#st.header("PM 2.5 Graph of year 2022")
+st.header("General Information About PM2.5")
 st.subheader('')
  
 
@@ -104,11 +107,6 @@ image = Image.open('PM2.5.jpg')
 st.image(image, caption='https://thainakarin.co.th')
 st.markdown("PM stands for Particulate matter it is one of the pollutants, made from a mixture of many chemical species both organic and inorganic. Particles vary widely in size, shape, and chemical composition. It may contain metallic compounds or even carcinogenic compounds. Particles are defined by their diameter for air quality regulatory purposes including those with a diameter of 10 microns or less (PM10), Fine particulate matter that is 2.5 microns or less in diameter (PM2.5)")
 
-st.header("Air quality index")
-image_index = Image.open('IMG_6081.jpeg')
-st.image(image_index, caption='Air quality index')
-#st.header("PM 2.5 Graph of year 2022")
-    
 
 def main():
     st.title("PM 2.5 Graph of year 2022")
